@@ -1,6 +1,6 @@
 package tests;
 
-import com.tmb.utils.ApiBuilder;
+import requestbuilder.RequestBuilder;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
@@ -11,7 +11,7 @@ public class GetTests {
 
     @Test
     public void getEmployeeDetails(){
-        Response response = ApiBuilder.buildRequestForGetCalls()
+        Response response = RequestBuilder.buildRequestForGetCalls()
                 .get("/posts");//class or config.properties
 
         response.prettyPrint();
@@ -29,7 +29,7 @@ public class GetTests {
 
     @Test
     public void getEmployeeDetail() {
-        Response response = ApiBuilder.buildRequestForGetCalls()
+        Response response = RequestBuilder.buildRequestForGetCalls()
                 .pathParam("id", 2)
                 .get("/posts/{id}");//class or config.properties
 

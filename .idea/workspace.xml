@@ -7,7 +7,12 @@
     <list default="true" id="12f3b3a6-9ddf-49d4-b560-38ccc5381431" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tmb/tests/GetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.tmb/utils/ApiBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/requestbuilder/RequestBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.tmb/utils/FakerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.tmb/utils/FakerUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.tmb/utils/FileUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/GetTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/GetTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/PostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/PostTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,15 +49,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/user/IdeaProjects/APIAutomationFramework/src/main/java/com.tmb",
+    "last_opened_file_path": "/home/user/IdeaProjects/APIAutomationFramework",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "settings.editor.selected.configurable": "editing.templates"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/jsons" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/tmb/utils" />
       <recent name="$PROJECT_DIR$/src/test/java/com" />
@@ -62,7 +68,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PostTest.postCallTest">
+  <component name="RunManager" selected="TestNG.PostTest.postRequestUsingExternalFile1">
     <configuration name="GetTests.getEmployeeDetails" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIAutomationFramework" />
       <extension name="coverage">
@@ -93,8 +99,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PostTest.postRequestUsingExternalFile" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIAutomationFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.PostTest" />
+      <option name="METHOD_NAME" value="postRequestUsingExternalFile" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostTest.postRequestUsingExternalFile1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIAutomationFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.PostTest" />
+      <option name="METHOD_NAME" value="postRequestUsingExternalFile1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PostTest.postRequestUsingExternalFile1" />
+        <item itemvalue="TestNG.PostTest.postRequestUsingExternalFile" />
         <item itemvalue="TestNG.PostTest.postCallTest" />
         <item itemvalue="TestNG.GetTests.getEmployeeDetails" />
       </list>
@@ -121,5 +165,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.tmb.enums.PropertiesType" memberName="name" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

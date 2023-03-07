@@ -23,7 +23,7 @@ public final class FakerUtils {
             return faker.name().firstName();
         }
 
-    public static String getLastName(){
-        return faker.name().lastName();
+        public static String getLastName(){
+            return faker.name().lastName();
     }
 }
