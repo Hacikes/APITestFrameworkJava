@@ -1,14 +1,12 @@
 package tests;
 
 import com.tmb.constants.FCwithSingleton;
-import com.tmb.constants.FrameworkConstants;
 import com.tmb.pojo.Employee;
 import com.tmb.utils.ApiUtils;
-import com.tmb.utils.RandonUtils;
-import requestbuilder.RequestBuilder;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
+import requestbuilder.RequestBuilder;
 
 import java.lang.reflect.Method;
 
@@ -35,6 +33,7 @@ public class PostTest {
 
     }
 // Простой, но не рабочий метод
+/*
     @Test
     public void postRequestUsingExternalFile(Method method){ // используя метод появляется экспешпн
         String resource = ApiUtils
@@ -56,6 +55,7 @@ public class PostTest {
         Assertions.assertThat(response.getStatusCode()).isEqualTo(201);
     }
 
+*/
 
     // Сложный метод
     @Test
@@ -67,7 +67,7 @@ public class PostTest {
                 // Изменяются имя и id через замену значений
                 // не забываем, что методы идут из импортированного класса RandonUtils
                 .replace("Alex", getFirstName())
-                .replace("number", String.valueOf(RandonUtils.getId()));
+                .replace("number", String.valueOf(getId()));
 
         Response response = RequestBuilder.buildRequestForGetCalls()
                 .body(resource)

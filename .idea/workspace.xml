@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12f3b3a6-9ddf-49d4-b560-38ccc5381431" name="Changes" comment="">
+    <list default="true" id="12f3b3a6-9ddf-49d4-b560-38ccc5381431" name="Changes" comment="Сделали сложный путь, но как надо">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.tmb/utils/ApiBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/requestbuilder/RequestBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.tmb/utils/FakerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.tmb/utils/FakerUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.tmb/utils/FileUtils.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/GetTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/GetTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/PostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/PostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,18 +39,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/user/IdeaProjects/APIAutomationFramework",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editing.templates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/user/Downloads/Test_API-master&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources/jsons" />
@@ -68,17 +63,53 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PostTest.postRequestUsingExternalFile1">
+  <component name="RunManager" selected="TestNG.GetTests.getEmployeeDetail">
+    <configuration name="DeleteRequestTest.DeleteRequest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIAutomationFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.DeleteRequestTest" />
+      <option name="METHOD_NAME" value="DeleteRequest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetTests.getEmployeeDetail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIAutomationFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.GetTests" />
+      <option name="METHOD_NAME" value="getEmployeeDetail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GetTests.getEmployeeDetails" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIAutomationFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tmb.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tmb.GetTests" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.GetTests" />
       <option name="METHOD_NAME" value="getEmployeeDetails" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -89,18 +120,6 @@
     </configuration>
     <configuration name="PostTest.postCallTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIAutomationFramework" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="com.tmb.PostTest" />
-      <option name="METHOD_NAME" value="postCallTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostTest.postRequestUsingExternalFile" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIAutomationFramework" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -109,7 +128,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.PostTest" />
-      <option name="METHOD_NAME" value="postRequestUsingExternalFile" />
+      <option name="METHOD_NAME" value="postCallTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -137,10 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PostTest.postRequestUsingExternalFile1" />
-        <item itemvalue="TestNG.PostTest.postRequestUsingExternalFile" />
-        <item itemvalue="TestNG.PostTest.postCallTest" />
+        <item itemvalue="TestNG.GetTests.getEmployeeDetail" />
         <item itemvalue="TestNG.GetTests.getEmployeeDetails" />
+        <item itemvalue="TestNG.PostTest.postRequestUsingExternalFile1" />
+        <item itemvalue="TestNG.PostTest.postCallTest" />
+        <item itemvalue="TestNG.DeleteRequestTest.DeleteRequest" />
       </list>
     </recent_temporary>
   </component>
@@ -153,6 +173,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677746029938</updated>
     </task>
+    <task id="LOCAL-00001" summary="Сделали сложный путь, но как надо">
+      <created>1678203527430</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678203527430</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +193,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Сделали сложный путь, но как надо" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделали сложный путь, но как надо" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
