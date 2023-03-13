@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12f3b3a6-9ddf-49d4-b560-38ccc5381431" name="Changes" comment="Сделали сложный путь, но как надо">
+    <list default="true" id="12f3b3a6-9ddf-49d4-b560-38ccc5381431" name="Changes" comment="Создал тестовый XML. Изменил количество одновременно запущенных тестов в XML файле. &#10;Реализовал поставщик данных в тесте GetTests. То есть можно проверять значения в разных парах ключ: значение. По различным параметрам">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/GetTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/GetTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/PostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/PostTest.java" afterDir="false" />
@@ -180,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678203527430</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Создал тестовый XML. Изменил количество одновременно запущенных тестов в XML файле. &#10;Реализовал поставщик данных в тесте GetTests. То есть можно проверять значения в разных парах ключ: значение. По различным параметрам">
+      <created>1678721702524</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678721702524</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,7 +203,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Сделали сложный путь, но как надо" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделали сложный путь, но как надо" />
+    <MESSAGE value="Создал тестовый XML. Изменил количество одновременно запущенных тестов в XML файле. &#10;Реализовал поставщик данных в тесте GetTests. То есть можно проверять значения в разных парах ключ: значение. По различным параметрам" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создал тестовый XML. Изменил количество одновременно запущенных тестов в XML файле. &#10;Реализовал поставщик данных в тесте GetTests. То есть можно проверять значения в разных парах ключ: значение. По различным параметрам" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

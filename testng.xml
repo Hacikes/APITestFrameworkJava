@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--parallel="methods" для запуска параллельных методов
+thread-count="5"  количество потоков   -->
+    <test parallel="methods" thread-count="5" name="/home/user/IdeaProjects/APIAutomationFramework">
+        <classes>
+            <class name="tests.GetTests">
+                <methods>
+                    <include name="getEmployeeDetails"/>
+                    <include name="getEmployeeDetail"/>
+                </methods>
+            </class>
+            <class name="tests.PostTest">
+                <methods>
+                    <include name="postCallTest"/>
+                    <include name="postRequestUsingExternalFile"/>
+                    <include name="postRequestUsingExternalFile1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
