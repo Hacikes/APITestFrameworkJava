@@ -105,6 +105,14 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- Для HTML Report       -->
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.0.5</version>
+        </dependency>
+
 
     </dependencies>
 </project>

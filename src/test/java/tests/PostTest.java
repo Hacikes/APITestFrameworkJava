@@ -2,6 +2,7 @@ package tests;
 
 import com.tmb.constants.FCwithSingleton;
 import com.tmb.pojo.Employee;
+import com.tmb.reports.ExtenLogger;
 import com.tmb.utils.ApiUtils;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
@@ -12,7 +13,7 @@ import java.lang.reflect.Method;
 
 import static com.tmb.utils.RandonUtils.*;
 
-public class PostTest {
+public class PostTest extends BaseTest{
     @Test
     public void postCallTest(){
         // Create Post call
@@ -24,10 +25,19 @@ public class PostTest {
                 .setId(getId()) // Так использовать стороннюю библиотеку нельзя
                 .build();
 
-        Response response = RequestBuilder.buildRequestForGetCalls()
+        Response response = RequestBuilder
+                .buildRequestForGetCalls()
                 .body(employee)
                 .post("/posts");
         response.prettyPrint();
+
+        // Якорь для отчёта
+        // Отправка инфы в формате String
+
+        // Форматирует json в ответе теста в отчёте
+        ExtenLogger.logResponse(response.asPrettyString());
+
+
 
         Assertions.assertThat(response.getStatusCode()).isEqualTo(201);
 
@@ -73,6 +83,13 @@ public class PostTest {
                 .body(resource)
                 .post("/posts");
         response.prettyPrint();
+
+        // Якорь для отчёта
+        // Отправка инфы в формате String
+
+        // Форматирует json в ответе теста в отчёте
+        ExtenLogger.logResponse(response.asPrettyString());
+
         // Прописываем по сути путь к файлу используя пути из FCwithSingleton
         ApiUtils.storeStringAsJsonFile(FCwithSingleton.getInstance().getGetResponseJsonFolderPath() +method.getName()+"response.json", response);
 

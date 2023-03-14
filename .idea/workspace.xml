@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="12f3b3a6-9ddf-49d4-b560-38ccc5381431" name="Changes" comment="Создал тестовый XML. Изменил количество одновременно запущенных тестов в XML файле. &#10;Реализовал поставщик данных в тесте GetTests. То есть можно проверять значения в разных парах ключ: значение. По различным параметрам">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/postRequestUsingExternalFile1response.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/postRequestUsingExternalFile1response.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/DataProviderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DataProviderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/GetTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/GetTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/PostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/PostTest.java" afterDir="false" />
     </list>
@@ -63,8 +66,26 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GetTests.getEmployeeDetail">
-    <configuration name="DeleteRequestTest.DeleteRequest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG./home/user/IdeaProjects/APIAutomationFramework/testng.xml">
+    <configuration name="ExtentReportDemo.extentTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIAutomationFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="ExtentReportDemo" />
+      <option name="METHOD_NAME" value="extentTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIAutomationFramework" />
       <extension name="coverage">
         <pattern>
@@ -73,9 +94,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.DeleteRequestTest" />
-      <option name="METHOD_NAME" value="DeleteRequest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="tests.GetTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -86,7 +106,7 @@
       <module name="APIAutomationFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,7 +124,7 @@
       <module name="APIAutomationFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,36 +138,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostTest.postCallTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/home/user/IdeaProjects/APIAutomationFramework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIAutomationFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.PostTest" />
-      <option name="METHOD_NAME" value="postCallTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostTest.postRequestUsingExternalFile1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIAutomationFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.PostTest" />
-      <option name="METHOD_NAME" value="postRequestUsingExternalFile1" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -156,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GetTests.getEmployeeDetail" />
+        <item itemvalue="TestNG./home/user/IdeaProjects/APIAutomationFramework/testng.xml" />
         <item itemvalue="TestNG.GetTests.getEmployeeDetails" />
-        <item itemvalue="TestNG.PostTest.postRequestUsingExternalFile1" />
-        <item itemvalue="TestNG.PostTest.postCallTest" />
-        <item itemvalue="TestNG.DeleteRequestTest.DeleteRequest" />
+        <item itemvalue="TestNG.GetTests" />
+        <item itemvalue="TestNG.ExtentReportDemo.extentTest" />
+        <item itemvalue="TestNG.GetTests.getEmployeeDetail" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678721702524</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Создал тестовый XML. Изменил количество одновременно запущенных тестов в XML файле. &#10;Реализовал поставщик данных в тесте GetTests. То есть можно проверять значения в разных парах ключ: значение. По различным параметрам">
+      <created>1678721729339</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678721729339</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +208,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Создал тестовый XML. Изменил количество одновременно запущенных тестов в XML файле. &#10;Реализовал поставщик данных в тесте GetTests. То есть можно проверять значения в разных парах ключ: значение. По различным параметрам" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.tmb.enums.PropertiesType" memberName="name" />

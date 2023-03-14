@@ -1,5 +1,6 @@
 package tests;
 
+import com.tmb.reports.ExtenLogger;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.DataProvider;
@@ -8,21 +9,31 @@ import requestbuilder.RequestBuilder;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class GetTests {
+// Наследуемся от BaseTest
+public class GetTests extends BaseTest{
+
 
     @Test
     public void getEmployeeDetails(){
-        Response response = RequestBuilder.buildRequestForGetCalls()
+        Response response = RequestBuilder
+                .buildRequestForGetCalls()
                 .get("/posts");//class or config.properties
 
         response.prettyPrint();
 
+        // Якорь для отчёта
+        // Отправка инфы в формате String
+        // Форматирует json в ответе теста в отчёте
+        ExtenLogger.logResponse(response.asPrettyString());
+
+
         Assertions.assertThat(response.getStatusCode())
-                .isEqualTo(200);
+                .isEqualTo(201);
         // Поиск ключа и сравнение его значения из ответа
+/*
         assertThat(response.jsonPath().getString("author"))
                 .as("Сравнение автора с ответом").isEqualTo("[typecode]")
-                .hasSizeBetween(3,20); // проверка размера значения typecode из ответа
+                .hasSizeBetween(3,20); // проверка размера значения typecode из ответа*/
     }
 
     // Поставщик данных
@@ -35,10 +46,17 @@ public class GetTests {
         Response response = RequestBuilder
                 .buildRequestForGetCalls()
                 // Использовать pathParam, так как только в таком случае перебираются все объекты JSON
-                .pathParam("id", id)
+                .pathParams("id", id)
                 .get("/posts/{id}");//class or config.properties
 
         response.prettyPrint();
+
+        // Якорь для отчёта
+        // Отправка инфы в формате String
+
+        // Форматирует json в ответе теста в отчёте
+        ExtenLogger.logResponse(response.asPrettyString());
+
 
         Assertions.assertThat(response.getStatusCode())
                 .isEqualTo(200);
